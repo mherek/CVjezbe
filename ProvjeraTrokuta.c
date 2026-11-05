@@ -25,4 +25,5 @@ int main(void){
     printf("Nije trokut\n ");
  
     }
+    return 0;
 }
