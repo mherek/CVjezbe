@@ -7,7 +7,7 @@ je pozitivan cijeli broj veći od 1 koji nema djelitelja osim jedan i samog sebe
 #include<stdio.h>
 int main(void){
 
-    int broj, provjera;
+    int broj, provjera = 0;
     printf("Molim unos jednog cijelog broja : ");
     scanf("%d", &broj);
 
