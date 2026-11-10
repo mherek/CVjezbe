@@ -3,25 +3,20 @@ Omogućiti korisniku unos jednog cijelog broja. Potom, izračunati i ispisati na
 znamenki tog broja.
 */
 
-#include <stdio.h>
-
+#include<stdio.h>
 int main(void){
 
-    int broj, produkt = 1;
-    printf("Unesite broj: ");
+    int broj, produkt = 1; 
+    printf("Molim unos broja ");
     scanf("%d", &broj);
-
-    while(broj > 0){
-
+    while(broj != 0){
         int a;
-        a = broj % 10 ;
-        produkt = produkt * a;
+        a = broj % 10;
+        produkt *= a;
 
-        broj = broj / 10 ;
+        broj /= 10;
     }
-
-    printf("Produkt znamenki je: %d", produkt);
-
+    printf("Produkt je : %d", produkt);
     return 0;
 
 }
